@@ -8,7 +8,8 @@ A arquitetura foi estruturada para separar claramente os dados brutos obtidos do
 
 ## Fluxo Geral dos Dados
 
-```Banco Central (SGS)
+```
+Banco Central (SGS)
        │
        ▼
 ┌─────────────────────────────┐
