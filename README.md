@@ -17,9 +17,49 @@ Landing → Bronze → Silver → Gold → Analysis
 
 ## Estrutura do Repositório
 
-data/
-docs/
-notebooks/
+### `data/landing`
+
+Contém os arquivos CSV originais obtidos a partir do Sistema Gerenciador de Séries Temporais (SGS) do Banco Central do Brasil. Esta pasta representa a Landing Zone do projeto, preservando os dados exatamente como foram extraídos da fonte.
+
+Arquivos:
+
+- `cdi_4389.csv`
+- `selic_432.csv`
+- `ipca_433.csv`
+
+---
+
+### `docs`
+
+Contém a documentação técnica do projeto, incluindo a descrição da arquitetura utilizada e o catálogo dos dados produzidos ao longo do pipeline.
+
+Arquivos:
+
+- `arquitetura.md`
+- `catalogo_dados.md`
+
+---
+
+### `notebooks`
+
+Contém os notebooks desenvolvidos no Databricks e utilizados na implementação do pipeline de dados e das análises.
+
+Arquivos:
+
+- `01_ingest_bronze.ipynb`  
+  Responsável pela ingestão dos arquivos CSV e construção da camada Bronze.
+
+- `02_transform_silver.ipynb`  
+  Responsável pela padronização, transformação e integração dos dados na camada Silver.
+
+- `03_build_gold.ipynb`  
+  Responsável pela construção das tabelas analíticas da camada Gold.
+
+- `04_analysis.ipynb`  
+  Responsável pelas análises exploratórias, visualizações e respostas às perguntas de negócio.
+
+---
+
 
 ## Relatório Completo
 
