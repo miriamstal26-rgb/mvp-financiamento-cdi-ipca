@@ -28,7 +28,7 @@ Banco Central (SGS)
               ▼
 ┌─────────────────────────────┐
 │ Silver                      │
-│ dim_calendario               │
+│ dim_calendario              │
 │ silver_indicadores_macro    │
 │ silver_quality_report       │
 └─────────────┬───────────────┘
