@@ -8,8 +8,7 @@ A arquitetura foi estruturada para separar claramente os dados brutos obtidos do
 
 ## Fluxo Geral dos Dados
 
-```text
-Banco Central (SGS)
+```Banco Central (SGS)
        │
        ▼
 ┌─────────────────────────────┐
@@ -28,7 +27,7 @@ Banco Central (SGS)
               ▼
 ┌─────────────────────────────┐
 │ Silver                      │
-│ dim_calendario              │
+│ dim_calendario               │
 │ silver_indicadores_macro    │
 │ silver_quality_report       │
 └─────────────┬───────────────┘
@@ -37,9 +36,7 @@ Banco Central (SGS)
 ┌─────────────────────────────┐
 │ Gold                        │
 │ gold_evolucao_indicadores   │
-│ gold_financiamento_indexado │
 │ gold_risco_indexadores      │
-│ gold_simulacao_sac          │
 └─────────────┬───────────────┘
               │
               ▼
