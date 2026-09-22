@@ -48,6 +48,18 @@ Banco Central (SGS)
 
 ---
 
+## Estratégia de Modelagem dos Dados
+
+Além da Arquitetura Medalhão, foi adotada uma abordagem de modelagem dimensional simplificada para organizar os dados destinados ao consumo analítico.
+
+A estrutura construída possui características inspiradas no modelo Star Schema (Esquema Estrela), amplamente utilizado em ambientes de Data Warehouse. Neste projeto, a tabela `silver_indicadores_macro` atua como estrutura central de armazenamento dos indicadores econômicos consolidados, enquanto a tabela `dim_calendario` fornece os atributos temporais utilizados nas análises.
+
+Devido à natureza do conjunto de dados utilizado neste MVP, composto por três séries econômicas e uma única dimensão de negócio relevante (tempo), optou-se por uma modelagem dimensional simplificada, evitando a criação de estruturas excessivamente complexas que não agregariam valor analítico ao projeto.
+
+Essa abordagem permitiu manter a solução aderente aos princípios da modelagem dimensional, preservando simplicidade, rastreabilidade e facilidade de consumo dos dados nas etapas analíticas da camada Gold.
+
+---
+
 ## Camada Landing
 
 ### Objetivo
